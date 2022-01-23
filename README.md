@@ -2,7 +2,7 @@
 - 🌎 I'm currently working as Freelancer
 - 👀 I’m interested in Python, JavaScript, Java
 - 💞️ I’m looking to collaborate on open source projets
-- 📫 How to reach me brestcontacto@gmail.com
+- 📫 How to reach me https://twitter.com/brestgg
 
 <!---
 esteban-brest/esteban-brest is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
