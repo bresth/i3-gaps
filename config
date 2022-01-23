@@ -126,7 +126,7 @@ bindsym $mod+r mode "resize"
 
 bar { 
       	position top
-        height 13  
+        height 10 
       status_command ~/.config/bumblebee-status/bumblebee-status \
  -t iceberg-rainbow \
  -m memory datetime hostname
@@ -146,10 +146,10 @@ bar {
 }
 
 
-gaps outer 4
-gaps inner 4
+gaps outer 3
+gaps inner 3
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 exec_always xrandr --output DP-1 --mode 1280x1024
 exec_always redshift -O 4000K
