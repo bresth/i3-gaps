@@ -56,16 +56,15 @@ bindsym $mod+q exec rofi -show run
 # start a vs code
 bindsym $mod+c exec code
 
+# start a off
+bindsym $mod+o exec shutdown now
+
+# start a reboot
+bindsym $mod+p exec reboot
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -192,19 +191,20 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 bar {
-	position top 
+	position top
+        height 10
       status_command ~/.config/bumblebee-status/bumblebee-status \
  -t  iceberg-rainbow \
- -m  memory datetime hostname
-	        colors {
-		        background              #f89696
-                                statusline              #ffffff
-                                        separator               #666666
+ -m  memory time hostname
+	                colors {
+		                background              #f89696
+                                        statusline              #ffffff
+                                                separator               #666666
 
         focused_workspace       #753030 #995494 #ffffff
         active_workspace        #333333 #76a121 #ffffff
         inactive_workspace      #333333 #442020 #e8e8e8
-         urgent_workspace        #2f343a #3c7f8c #ffffff
+        urgent_workspace        #2f343a #3c7f8c #ffffff
         binding_mode            #2f343a #513c77 #ffffff
 	}
 
