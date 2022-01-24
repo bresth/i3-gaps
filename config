@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -45,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec lxterminal
 
 # start a brave browser
 bindsym $mod+b exec brave
@@ -210,10 +210,12 @@ bar {
 
 }
 
-gaps outer 3
-gaps inner 3
+gaps outer 6
+gaps inner 6
+client.focused #bf7500 #bf7500 #bf7500 #ffe570
 
 for_window [class="^.*"] border pixel 
 exec_always xrandr --output DP-1 --mode 1280x1024
 exec_always feh --bg-fill /home/esteban/wallpapers
 exec_always redshift -O 4000K
+exec_always picom -b
