@@ -192,26 +192,26 @@ bindsym $mod+r mode "resize"
 
 bar {
 	position top
-        height 10
+        height 17
       status_command ~/.config/bumblebee-status/bumblebee-status \
- -t  iceberg-rainbow \
+ -t nord-powerline \
  -m  memory time hostname
 	                colors {
-		                background              #f89696
+		                background              #ceb4a5
                                         statusline              #ffffff
                                                 separator               #666666
 
-        focused_workspace       #753030 #995494 #ffffff
-        active_workspace        #333333 #76a121 #ffffff
-        inactive_workspace      #333333 #442020 #e8e8e8
-        urgent_workspace        #2f343a #3c7f8c #ffffff
+        focused_workspace       #753030 #000000 #ffffff
+        active_workspace        #333333 #000000 #ffffff
+        inactive_workspace      #333333 #434675 #e8e8e8
+        urgent_workspace        #2f343a #555555 #ffffff
         binding_mode            #2f343a #513c77 #ffffff
 	}
 
 }
 
-gaps outer 6
-gaps inner 6
+gaps outer 7
+gaps inner 7
 client.focused #bf7500 #bf7500 #bf7500 #ffe570
 
 for_window [class="^.*"] border pixel 
