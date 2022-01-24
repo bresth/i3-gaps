@@ -194,8 +194,8 @@ bar {
 	position top
         height 17
       status_command ~/.config/bumblebee-status/bumblebee-status \
- -t nord-powerline \
- -m  memory time hostname
+-t iceberg-rainbow \
+-m  memory time hostname uptime
 	                colors {
 		                background              #ceb4a5
                                         statusline              #ffffff
