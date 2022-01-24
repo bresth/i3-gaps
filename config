@@ -57,10 +57,10 @@ bindsym $mod+q exec rofi -show run
 bindsym $mod+c exec code
 
 # start a off
-bindsym $mod+o exec shutdown now
+bindsym $mod+Shift+o exec shutdown now
 
 # start a reboot
-bindsym $mod+p exec reboot
+bindsym $mod+Shift+p exec reboot
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -219,3 +219,4 @@ exec_always xrandr --output DP-1 --mode 1280x1024
 exec_always feh --bg-fill /home/esteban/wallpapers
 exec_always redshift -O 4000K
 exec_always picom -b
+exec_always --no-startup-id lxterminal
