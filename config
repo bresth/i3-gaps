@@ -192,17 +192,17 @@ bindsym $mod+r mode "resize"
 
 bar {
 	position top
-        height 17
+        height 18
       status_command ~/.config/bumblebee-status/bumblebee-status \
--t iceberg-rainbow \
+-t nord-powerline \
 -m  memory time hostname uptime
 	                colors {
-		                background              #ceb4a5
+		                background              #905eb9
                                         statusline              #ffffff
                                                 separator               #666666
 
-        focused_workspace       #753030 #000000 #ffffff
-        active_workspace        #333333 #000000 #ffffff
+        focused_workspace       #753030 #905eb9 #ffffff
+        active_workspace        #333333 #905eb9 #ffffff
         inactive_workspace      #333333 #434675 #e8e8e8
         urgent_workspace        #2f343a #555555 #ffffff
         binding_mode            #2f343a #513c77 #ffffff
@@ -210,8 +210,8 @@ bar {
 
 }
 
-gaps outer 7
-gaps inner 7
+gaps outer 2
+gaps inner 4
 client.focused #bf7500 #bf7500 #bf7500 #ffe570
 
 for_window [class="^.*"] border pixel 
@@ -219,4 +219,4 @@ exec_always xrandr --output DP-1 --mode 1280x1024
 exec_always feh --bg-fill /home/esteban/wallpapers
 exec_always redshift -O 4000K
 exec_always picom -b
-exec_always --no-startup-id lxterminal
+exec_always --no-startup-id lxterminal "neofetch"
