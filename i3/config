@@ -48,7 +48,7 @@ floating_modifier $mod
 bindsym $mod+Return exec lxterminal
 
 # start a browser
-bindsym $mod+b exec firefox
+bindsym $mod+b exec brave
 
 # start a vs-code
 bindsym $mod+c exec code
@@ -117,7 +117,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "firefox"
+set $ws1 "browser"
 set $ws2 "code"
 set $ws3 "terminal"
 set $ws4 "telegram"
