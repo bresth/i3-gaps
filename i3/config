@@ -209,8 +209,8 @@ bar {
 
 }
 
-gaps outer 2
-gaps inner 2
+gaps outer 1
+gaps inner 1
 client.focused  #ffffff #ffffff #ffe570
 
 for_window [class="^.*"] border pixel
