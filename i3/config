@@ -50,9 +50,6 @@ bindsym $mod+Return exec lxterminal
 # start a brave browser
 bindsym $mod+b exec brave
 
-# start a rofi
-bindsym $mod+q exec rofi -show run
-
 # start a vs code
 bindsym $mod+c exec code
 
@@ -192,7 +189,7 @@ bindsym $mod+r mode "resize"
 
 bar {
 	position top
-        height 10
+        height 0
       status_command ~/.config/bumblebee-status/bumblebee-status \
 -t nord-powerline \
 -m  memory time hostname uptime
@@ -211,7 +208,7 @@ bar {
 }
 
 gaps outer 2
-gaps inner 4
+gaps inner 2
 client.focused  #ffffff #ffffff #ffe570
 
 for_window [class="^.*"] border pixel
