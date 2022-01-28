@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Esteban
-- 👀 I’m interested in Python, JavaScript, Shell, Java, C and C++
+- 👀 I’m interested in Python, JavaScript, Java, C.
 <!---- 
 🌱 I’m currently learning ...
 --->
